@@ -2,15 +2,16 @@
 using System.Threading.Tasks;
 using HandMadeCraftAdminServer.DbContext;
 using HandMadeCraftAdminServer.Models.User;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace HandMadeCraftAdminServer.Services
 {
     public class UserService : IUserService
     {
-        private readonly UserDbContext _db;
+        private readonly AppDbContext _db;
 
-        public UserService(UserDbContext db)
+        public UserService(AppDbContext db)
         {
             _db = db;
         }

@@ -95,42 +95,15 @@ namespace HandMadeCraftAdminServer.Controllers
             }
             return View(user);
         }
-
-
-        // GET: Users/Delete/5
+        
         [HttpGet]
         public async Task<IActionResult> Delete(string id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var user = await _userService.GetUserById(id);
-
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return View(user);
-        }
-
-        // POST: Users/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
-        {
-            try
-            {
-                await _userService.DeleteUser(id);
-                return RedirectToAction(nameof(Index));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error when deleting user: " + ex.Message);
-                return View("Error");
-            }
+            if (user == null) return NotFound();
+            
+            await _userService.DeleteUser(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -1,16 +1,17 @@
-﻿using HandMadeCraftAdminServer.Models.User;
+﻿using HandMadeCraftAdminServer.Models.Category;
+using HandMadeCraftAdminServer.Models.User;
 using Microsoft.EntityFrameworkCore;
 
 namespace HandMadeCraftAdminServer.DbContext
 {
-    public class UserDbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
-        public UserDbContext(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
         
         public DbSet<User> Users { get; set; }
-        // public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<UserFollower> UserFollowers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

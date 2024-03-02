@@ -12,6 +12,7 @@ namespace HandMadeCraftAdminServer.ServicesCollection
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICategoryService, CategoryService>();
                 
             return services;
         }
@@ -20,7 +21,7 @@ namespace HandMadeCraftAdminServer.ServicesCollection
         {
             string sqlServerConnectionString = configuration.GetConnectionString("DefaultConnection");
             
-            services.AddDbContext<UserDbContext>(options =>
+            services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(sqlServerConnectionString));
             
             return services;

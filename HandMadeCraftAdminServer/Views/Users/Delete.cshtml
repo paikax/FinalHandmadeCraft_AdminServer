@@ -1,28 +1,28 @@
-﻿@model HandMadeCraftAdminServer.Models.User.User
-
-@{
-    ViewBag.Title = "Delete User";
-    Layout = "_Layout";
-}
-
-<h2 class="text-center mt-4 mb-3">Delete User</h2>
-
-<div class="container">
-    <form asp-action="Delete" method="post">
-        <div class="alert alert-danger">
-            <h4 class="alert-heading">Are you sure?</h4>
-            <p>You are about to delete this user:</p>
-            <p>
-                <strong>User ID:</strong> @Model.Id<br />
-                <strong>First Name:</strong> @Model.FirstName<br />
-                <strong>Last Name:</strong> @Model.LastName<br />
-                <strong>Email:</strong> @Model.Email<br />
-            </p>
-            <hr />
-            <p class="mb-0">This action cannot be undone. Are you sure you want to proceed?</p>
-        </div>
-        <input type="hidden" asp-for="Id" />
-        <button type="submit" class="btn btn-danger">Delete</button>
-        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
-    </form>
-</div>
+﻿@* @model HandMadeCraftAdminServer.Models.User.User *@
+@* *@
+@* @{ *@
+@*     ViewBag.Title = "Delete User"; *@
+@*     Layout = "_Layout"; *@
+@* } *@
+@* *@
+@* <h2 class="text-center mt-4 mb-3">Delete User</h2> *@
+@* *@
+@* <div class="container"> *@
+@*     <form asp-action="DeleteConfirmed" method="post"> *@
+@*         <div class="alert alert-danger"> *@
+@*             <h4 class="alert-heading">Are you sure?</h4> *@
+@*             <p>You are about to delete this user:</p> *@
+@*             <p> *@
+@*                 <strong>User ID:</strong> @Model.Id<br /> *@
+@*                 <strong>First Name:</strong> @Model.FirstName<br /> *@
+@*                 <strong>Last Name:</strong> @Model.LastName<br /> *@
+@*                 <strong>Email:</strong> @Model.Email<br /> *@
+@*             </p> *@
+@*             <hr /> *@
+@*             <p class="mb-0">This action cannot be undone. Are you sure you want to proceed?</p> *@
+@*         </div> *@
+@*         <input type="hidden" asp-for="Id" /> *@
+@*         <button type="submit" class="btn btn-danger">Delete</button> *@
+@*         <a asp-action="Index" class="btn btn-secondary">Cancel</a> *@
+@*     </form> *@
+@* </div> *@

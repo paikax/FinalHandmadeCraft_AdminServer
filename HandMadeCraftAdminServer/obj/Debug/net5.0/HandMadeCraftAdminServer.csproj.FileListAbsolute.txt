@@ -191,3 +191,8 @@ D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdmin
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Delete.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Detail.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Edit.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Delete.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
