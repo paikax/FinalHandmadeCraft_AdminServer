@@ -20,7 +20,7 @@ namespace HandMadeCraftAdminServer.Services
             return await _db.Users.ToListAsync();
         }
 
-        public async Task<User> GetUserById(int id)
+        public async Task<User> GetUserById(string id)
         {
             return await _db.Users.FindAsync(id);
         }
@@ -30,8 +30,9 @@ namespace HandMadeCraftAdminServer.Services
             _db.Entry(user).State = EntityState.Modified;
             await _db.SaveChangesAsync();
         }
+        
 
-        public async Task DeleteUser(int id)
+        public async Task DeleteUser(string id)
         {
             var user = await _db.Users.FindAsync(id);
             if (user != null)

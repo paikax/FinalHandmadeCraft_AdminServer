@@ -8,8 +8,8 @@ namespace HandMadeCraftAdminServer.Services
     public interface IUserService
     {
         Task<IEnumerable<User>> GetAll();
-        Task<User> GetUserById(int id);
+        Task<User> GetUserById(string id);
         Task UpdateUser(User user);
-        Task DeleteUser(int id);
+        Task DeleteUser(string id);
     }
 }

@@ -31,16 +31,36 @@ namespace HandMadeCraftAdminServer.Controllers
             }
         }
 
-        // GET: Users/Edit/5
+        
+        // GET: Users/Detail/5
         [HttpGet]
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Detail(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var user = await _userService.GetUserById(id.Value);
+            var user = await _userService.GetUserById(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
+        }
+        
+        // GET: Users/Edit/5
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userService.GetUserById(id);
 
             if (user == null)
             {
@@ -79,14 +99,14 @@ namespace HandMadeCraftAdminServer.Controllers
 
         // GET: Users/Delete/5
         [HttpGet]
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var user = await _userService.GetUserById(id.Value);
+            var user = await _userService.GetUserById(id);
 
             if (user == null)
             {
@@ -99,7 +119,7 @@ namespace HandMadeCraftAdminServer.Controllers
         // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             try
             {
