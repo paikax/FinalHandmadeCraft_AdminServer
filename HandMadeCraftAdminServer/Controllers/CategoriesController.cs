@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using HandMadeCraftAdminServer.Models.Category;
 using HandMadeCraftAdminServer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HandMadeCraftAdminServer.Controllers
@@ -14,12 +15,14 @@ namespace HandMadeCraftAdminServer.Controllers
             _categoryService = categoryService;
         }
     
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var categories = await _categoryService.GetAllCategories();
             return View(categories);
         }
 
+        [Authorize]
         public async Task<IActionResult> Details(string id)
         {
             var category = await _categoryService.GetCategoryById(id);
@@ -30,11 +33,13 @@ namespace HandMadeCraftAdminServer.Controllers
             return View(category);
         }
 
+        [Authorize]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Category category)
@@ -47,6 +52,7 @@ namespace HandMadeCraftAdminServer.Controllers
             return View(category);
         }
 
+        [Authorize]
         public async Task<IActionResult> Edit(string id)
         {
             var category = await _categoryService.GetCategoryById(id);
@@ -57,6 +63,7 @@ namespace HandMadeCraftAdminServer.Controllers
             return View(category);
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, Category category)
@@ -74,6 +81,7 @@ namespace HandMadeCraftAdminServer.Controllers
             return View(category);
         }
 
+        [Authorize]
         public async Task<IActionResult> Delete(string id)
         {
             await _categoryService.DeleteCategory(id);

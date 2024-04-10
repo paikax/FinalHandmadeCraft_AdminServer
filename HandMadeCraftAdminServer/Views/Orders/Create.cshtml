@@ -1,0 +1,25 @@
+﻿@model HandMadeCraftAdminServer.Models.Order.Order
+
+@{
+    ViewBag.Title = "Create New Order";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <h2>Create New Order</h2>
+
+    <div class="mt-3">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label>User ID</label>
+                @Html.TextBoxFor(model => model.UserId, new { @class = "form-control" })
+            </div>
+            <!-- Other fields of the order -->
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        }
+    </div>
+</div>

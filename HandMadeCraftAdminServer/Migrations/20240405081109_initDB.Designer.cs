@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HandMadeCraftAdminServer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240302142030_updateDB")]
-    partial class updateDB
+    [Migration("20240405081109_initDB")]
+    partial class initDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -84,7 +84,7 @@ namespace HandMadeCraftAdminServer.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RefreshToken");
+                    b.ToTable("RefreshTokens");
                 });
 
             modelBuilder.Entity("HandMadeCraftAdminServer.Models.User.User", b =>
@@ -203,9 +203,11 @@ namespace HandMadeCraftAdminServer.Migrations
 
             modelBuilder.Entity("HandMadeCraftAdminServer.Models.RefreshToken", b =>
                 {
-                    b.HasOne("HandMadeCraftAdminServer.Models.User.User", null)
+                    b.HasOne("HandMadeCraftAdminServer.Models.User.User", "User")
                         .WithMany("RefreshTokens")
                         .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("HandMadeCraftAdminServer.Models.User.UserFollower", b =>

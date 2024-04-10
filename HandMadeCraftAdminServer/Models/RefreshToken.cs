@@ -25,5 +25,8 @@ namespace HandMadeCraftAdminServer.Models
         public bool IsActive => Revoked == null && !IsExpired;
         
         public bool IsRevoked => Revoked != null;
+        
+        public string UserId { get; set; }
+        public User.User User { get; set; }
     }
 }

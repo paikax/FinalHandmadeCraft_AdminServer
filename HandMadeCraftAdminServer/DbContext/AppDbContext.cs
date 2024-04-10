@@ -1,4 +1,5 @@
-﻿using HandMadeCraftAdminServer.Models.Category;
+﻿using HandMadeCraftAdminServer.Models;
+using HandMadeCraftAdminServer.Models.Category;
 using HandMadeCraftAdminServer.Models.User;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,7 @@ namespace HandMadeCraftAdminServer.DbContext
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<UserFollower> UserFollowers { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

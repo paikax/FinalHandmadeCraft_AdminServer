@@ -188,7 +188,6 @@ D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdmin
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\HandMadeCraftAdminServer.Views.pdb
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\HandMadeCraftAdminServer.csproj.CopyComplete
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\HandMadeCraftAdminServer.genruntimeconfig.cache
-D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Delete.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Detail.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Edit.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
@@ -196,3 +195,17 @@ D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdmin
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
 D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Orders\Create.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Orders\Details.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Orders\Edit.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Orders\Index.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\BCrypt.Net-Next.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Users\Authenticate.cshtml.g.cs
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\NToastNotify.Views.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\NToastNotify.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\work\final_year_greenwich_project\HandMadeCraftAdminServer\HandMadeCraftAdminServer\HandMadeCraftAdminServer\obj\Debug\net5.0\Razor\Views\Shared\_StatusMessage.cshtml.g.cs

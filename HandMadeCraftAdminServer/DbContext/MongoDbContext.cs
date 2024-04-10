@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using HandMadeCraftAdminServer.Models.Order;
+using MongoDB.Driver;
 
 namespace HandMadeCraftAdminServer.DbContext
 {
@@ -10,16 +11,7 @@ namespace HandMadeCraftAdminServer.DbContext
         {
             _database = mongoClient.GetDatabase(databaseName);
         }
-
-        // public IMongoCollection<Category> Categories => _database.GetCollection<Category>("categories");
-        // public IMongoCollection<Tutorial> Tutorials => _database.GetCollection<Tutorial>("tutorials");
-        // public IMongoCollection<Material> Materials => _database.GetCollection<Material>("materials");
-        // public IMongoCollection<Order> Orders => _database.GetCollection<Order>("orders");
-        // public IMongoCollection<OrderItem> OrderItems => _database.GetCollection<OrderItem>("orderitems");
-        // public IMongoCollection<ForumPost> ForumPosts => _database.GetCollection<ForumPost>("forumposts");
-        // public IMongoCollection<Comment> Comments => _database.GetCollection<Comment>("comments");
-        // Add other collections as needed
-
-        // Add any additional methods or configurations specific to MongoDB
+        
+        public IMongoCollection<Order> Orders => _database.GetCollection<Order>("orders");
     }
 }

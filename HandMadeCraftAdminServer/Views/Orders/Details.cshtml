@@ -1,0 +1,73 @@
+﻿@model HandMadeCraftAdminServer.Models.Order.Order
+
+@{
+    ViewBag.Title = "Order Details";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Order Details</h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">ID</dt>
+                        <dd class="col-sm-9">@Model.Id</dd>
+
+                        <dt class="col-sm-3">User ID</dt>
+                        <dd class="col-sm-9">@Model.UserId</dd>
+
+                        <dt class="col-sm-3">Items</dt>
+                        <dd class="col-sm-9">
+                            <ul class="list-unstyled">
+                                @foreach (var orderItem in Model.Items)
+                                {
+                                    <li>
+                                        <strong>Tutorial ID:</strong> @orderItem.TutorialId - <strong>Price:</strong> @orderItem.Price, <strong>Quantity:</strong> @orderItem.Quantity
+                                    </li>
+                                }
+                            </ul>
+                        </dd>
+
+                        <dt class="col-sm-3">Quantity</dt>
+                        <dd class="col-sm-9">@Model.Quantity</dd>
+
+                        <dt class="col-sm-3">Total Price</dt>
+                        <dd class="col-sm-9">@Model.TotalPrice</dd>
+
+                        <dt class="col-sm-3">Address</dt>
+                        <dd class="col-sm-9">@Model.Address</dd>
+
+                        <dt class="col-sm-3">Buyer Email</dt>
+                        <dd class="col-sm-9">@Model.BuyerEmail</dd>
+
+                        <dt class="col-sm-3">Seller Email</dt>
+                        <dd class="col-sm-9">@Model.SellerEmail</dd>
+
+                        <dt class="col-sm-3">Order Date</dt>
+                        <dd class="col-sm-9">@Model.OrderDate</dd>
+
+                        <dt class="col-sm-3">Last Updated</dt>
+                        <dd class="col-sm-9">@Model.LastUpdated</dd>
+
+                        <dt class="col-sm-3">Creator ID</dt>
+                        <dd class="col-sm-9">@Model.CreatorId</dd>
+
+                        <dt class="col-sm-3">Seller Emails</dt>
+                        <dd class="col-sm-9">
+                            <ul class="list-unstyled">
+                                @foreach (var email in Model.SellerEmails ?? Enumerable.Empty<string>())
+                                {
+                                    <li>@email</li>
+                                }
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

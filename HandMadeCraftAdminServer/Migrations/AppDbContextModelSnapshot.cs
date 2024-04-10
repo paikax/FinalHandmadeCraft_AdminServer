@@ -82,7 +82,7 @@ namespace HandMadeCraftAdminServer.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RefreshToken");
+                    b.ToTable("RefreshTokens");
                 });
 
             modelBuilder.Entity("HandMadeCraftAdminServer.Models.User.User", b =>
@@ -201,9 +201,11 @@ namespace HandMadeCraftAdminServer.Migrations
 
             modelBuilder.Entity("HandMadeCraftAdminServer.Models.RefreshToken", b =>
                 {
-                    b.HasOne("HandMadeCraftAdminServer.Models.User.User", null)
+                    b.HasOne("HandMadeCraftAdminServer.Models.User.User", "User")
                         .WithMany("RefreshTokens")
                         .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("HandMadeCraftAdminServer.Models.User.UserFollower", b =>
