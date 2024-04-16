@@ -1,68 +1,60 @@
-﻿<div class="container mt-5">
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-8 offset-md-2 text-center">
             <h1 class="display-4">Welcome to HandmadeCraft Admin Server</h1>
             <p class="lead">Manage your HandmadeCraft business with ease.</p>
             <p>Explore the various features and functionalities available to streamline your operations.</p>
             <p class="mb-5">If you need any assistance, refer to the <a href="https://documentation.handmadecraft.com" target="_blank">documentation</a> or contact support.</p>
-            <a href="/Orders" class="btn btn-primary btn-lg">View Orders</a>
+            <a asp-controller="Users" asp-action="Index" class="btn btn-primary btn-lg">View all users</a>
         </div>
     </div>
 </div>
 
-<!-- Toggle button for chat -->
-<button id="toggleChat" class="btn btn-info btn-lg mt-3 fixed bottom-4 right-4 z-10">Read users message</button>
+<button id="toggleChat" class="btn btn-info btn-lg mt-3 fixed bottom-4 right-4 z-10">Read users' messages</button>
 
-<!-- TalkJS Container -->
 <div id="talkjs-container" style="height: 500px; display: none; position: fixed; bottom: 10px; right: 10px;"></div>
 
 <script src="https://cdn.talkjs.com/talk.js"></script>
 <script>
-    // Function to initialize TalkJS
     function initializeTalk() {
         if (typeof Talk !== 'undefined') {
             var me = new Talk.User({
-                id: '98', // Replace with user ID
-                name: 'Admin', // Replace with user name
-                email: 'admin@gmail.com', // Replace with user email
-                photoUrl: 'https://example.com/avatar.jpg', // Replace with user avatar URL
-                welcomeMessage: 'Hey there! How can I help you?' // Optional welcome message
+                id: 'admin',
+                name: 'Admin',
+                email: 'admin@gmail.com',
+                photoUrl: 'https://t4.ftcdn.net/jpg/03/75/38/73/360_F_375387396_wSJM4Zm0kIRoG7Ej8rmkXot9gN69H4u4.jpg', // Replace with admin avatar URL
+                welcomeMessage: 'Hey there! How can I help you?',
+                role: 'admin'
             });
 
             window.talkSession = new Talk.Session({
-                appId: 'tFfHQ5OV', // Replace with your Talk.js App ID
+                appId: 'tFfHQ5OV',
                 me: me
             });
 
-            var otherUser = new Talk.User({
-                id: '2f9ca6cd-04d0-4ec5-9294-300208e1667f', // Replace with other user ID
-                name: 'Client', // Replace with other user name
-                email: 'phongspacenasa@gmail.com', // Replace with other user email
-                photoUrl: 'https://your-photo-url.jpg' // Replace with other user avatar URL
-            });
+            function toggleChat() {
+                var chatContainer = document.getElementById("talkjs-container");
+                chatContainer.style.display = chatContainer.style.display === "none" ? "block" : "none";
+            }
 
-            var conversation = talkSession.getOrCreateConversation(Talk.oneOnOneId(me, otherUser));
-            conversation.setParticipant(me);
-            conversation.setParticipant(otherUser);
+            document.getElementById("toggleChat").addEventListener("click", toggleChat);
 
-            var chatbox = talkSession.createChatbox(conversation);
+            const chatbox = talkSession.createChatbox();
             chatbox.mount(document.getElementById("talkjs-container"));
+
+            const inbox = talkSession.createInbox();
+            inbox.mount(document.getElementById("talkjs-container"));
+
         } else {
             console.error('Talk.js library is not loaded.');
         }
     }
 
-    // Function to toggle chat visibility
-    function toggleChat() {
-        var chatContainer = document.getElementById("talkjs-container");
-        chatContainer.style.display = chatContainer.style.display === "none" ? "block" : "none";
-    }
-
-    // Initialize TalkJS when the DOM is loaded
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         initializeTalk();
-
-        // Add event listener to toggle chat button
-        document.getElementById("toggleChat").addEventListener("click", toggleChat);
     });
 </script>

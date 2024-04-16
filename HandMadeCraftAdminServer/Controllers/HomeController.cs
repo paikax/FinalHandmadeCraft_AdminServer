@@ -21,6 +21,15 @@ namespace HandMadeCraftAdminServer.Controllers
         
         public IActionResult Index()
         {
+            string adminId = "100";
+            string adminName = "Admin";
+            string adminEmail = "admin@gmail.com";
+            string adminPhotoUrl = "https://your-photo-url.jpg";
+
+            ViewBag.AdminId = adminId;
+            ViewBag.AdminName = adminName;
+            ViewBag.AdminEmail = adminEmail;
+            ViewBag.AdminPhotoUrl = adminPhotoUrl;
             return View();
         }
 
