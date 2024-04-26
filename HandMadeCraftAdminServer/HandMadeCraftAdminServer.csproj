@@ -10,8 +10,9 @@
         <PackageReference Include="Hangfire" Version="1.8.6" />
         <PackageReference Include="Hangfire.SqlServer" Version="1.8.6" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+        <PackageReference Include="Moq" Version="4.20.70" />
         <PackageReference Include="NToastNotify" Version="5.0.17" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
             <PrivateAssets>all</PrivateAssets>
@@ -25,6 +26,12 @@
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
         <PackageReference Include="MongoDB.Driver" Version="2.23.1" />
         <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+        <PackageReference Include="xunit" Version="2.7.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.5.8">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KRnmYkhK1lqaz5L8qZp6/e1BzCbBk82uO4aiNzbOVM9htIIhr+AQ1OIa1q/SScL4PuLt08GFsR+RQnD+g232FA==",
+  "dgSpecHash": "Jm0G/F3eImTNI4g+Fha/njnpstL5oV1dKtHm9VFR0jdsIAVU25kQXjb96e3j988eBuTN88cl+AtrPtId5ilmVQ==",
   "success": true,
   "projectFilePath": "D:\\work\\final_year_greenwich_project\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\paika\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\hangfire\\1.8.6\\hangfire.1.8.6.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\hangfire.aspnetcore\\1.8.6\\hangfire.aspnetcore.1.8.6.nupkg.sha512",
@@ -94,6 +95,7 @@
     "C:\\Users\\paika\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.9.0\\microsoft.testplatform.objectmodel.17.9.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\5.0.2\\microsoft.visualstudio.web.codegeneration.5.0.2.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\5.0.2\\microsoft.visualstudio.web.codegeneration.contracts.5.0.2.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\5.0.2\\microsoft.visualstudio.web.codegeneration.core.5.0.2.nupkg.sha512",
@@ -109,6 +111,7 @@
     "C:\\Users\\paika\\.nuget\\packages\\mongodb.driver\\2.23.1\\mongodb.driver.2.23.1.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\mongodb.driver.core\\2.23.1\\mongodb.driver.core.2.23.1.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
@@ -156,6 +159,7 @@
     "C:\\Users\\paika\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\system.diagnostics.eventlog\\4.7.0\\system.diagnostics.eventlog.4.7.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
@@ -227,6 +231,14 @@
     "C:\\Users\\paika\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit\\2.7.1\\xunit.2.7.1.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.analyzers\\1.12.0\\xunit.analyzers.1.12.0.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.assert\\2.7.1\\xunit.assert.2.7.1.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.core\\2.7.1\\xunit.core.2.7.1.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.extensibility.core\\2.7.1\\xunit.extensibility.core.2.7.1.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.extensibility.execution\\2.7.1\\xunit.extensibility.execution.2.7.1.nupkg.sha512",
+    "C:\\Users\\paika\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.8\\xunit.runner.visualstudio.2.5.8.nupkg.sha512",
     "C:\\Users\\paika\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": [
@@ -236,6 +248,16 @@
       "warningLevel": 1,
       "message": "HandMadeCraftAdminServer depends on NToastNotify (>= 5.0.17) but NToastNotify 5.0.17 was not found. An approximate best match of NToastNotify 6.0.0 was resolved.",
       "libraryId": "NToastNotify",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'xunit.runner.visualstudio 2.5.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "xunit.runner.visualstudio",
       "targetGraphs": [
         "net5.0"
       ]

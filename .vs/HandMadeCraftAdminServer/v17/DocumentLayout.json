@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\work\\final_year_greenwich_project\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21FDF4B7-F385-43AA-94C8-ACE37E608B02}|HandMadeCraftAdminServer\\HandMadeCraftAdminServer.csproj|d:\\work\\final_year_greenwich_project\\handmadecraftadminserver\\handmadecraftadminserver\\handmadecraftadminserver\\unittest\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FDF4B7-F385-43AA-94C8-ACE37E608B02}|HandMadeCraftAdminServer\\HandMadeCraftAdminServer.csproj|solutionrelative:handmadecraftadminserver\\unittest\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryServiceTests.cs",
+              "DocumentMoniker": "D:\\work\\final_year_greenwich_project\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\UnitTest\\CategoryServiceTests.cs",
+              "RelativeDocumentMoniker": "HandMadeCraftAdminServer\\UnitTest\\CategoryServiceTests.cs",
+              "ToolTip": "D:\\work\\final_year_greenwich_project\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\HandMadeCraftAdminServer\\UnitTest\\CategoryServiceTests.cs",
+              "RelativeToolTip": "HandMadeCraftAdminServer\\UnitTest\\CategoryServiceTests.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T05:06:20.505Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

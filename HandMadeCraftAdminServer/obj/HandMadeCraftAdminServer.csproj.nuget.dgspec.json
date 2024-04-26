@@ -92,6 +92,10 @@
               "target": "Package",
               "version": "[2.23.1, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
             "NToastNotify": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -99,6 +103,16 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.8, )"
             }
           },
           "imports": [
